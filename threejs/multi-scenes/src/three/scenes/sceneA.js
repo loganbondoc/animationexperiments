@@ -25,7 +25,7 @@ export function createSceneA() {
   let model = null
 
   loader.load(
-    '/models/Flower.glb', // path relative to public/
+    '/models/flower-blue.glb', // path relative to public/
     (gltf) => {
       model = gltf.scene
       scene.add(model)
@@ -40,7 +40,7 @@ export function createSceneA() {
 
   function update() {
     if (model) {
-      model.rotation.y += 0.01
+      model.rotation.y += 0.0005
     }
   }
 

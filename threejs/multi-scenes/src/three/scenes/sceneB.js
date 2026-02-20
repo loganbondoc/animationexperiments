@@ -20,7 +20,7 @@ export function createSceneB() {
   let model = null
 
   loader.load(
-    '/models/Flower.glb', // path relative to public/
+    '/models/flower-blue.glb', // path relative to public/
     (gltf) => {
       model = gltf.scene
       scene.add(model)
